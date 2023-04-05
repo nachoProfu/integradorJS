@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mieris Bakery</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/animaciones.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/img/logo_blanco_sf.png"
+        alt="logo mieris"
+        class="logo"
+      />
+      <nav class="navbar">
+        <!-- <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu"><i class="fas fa-bars" id="hambur"></i></label> -->
+
+        <div class="menu-hambur">
+          <i class="fas fa-bars" id="hambur"></i>
+          <!-- <img src="./assets/img/menu.png" alt="" class="menu-icon" /> -->
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#abouts">Nosotros</a></li>
+          <li><a href="#products">Productos</a></li>
+          <li><a href="#contact">Contactanos</a></li>
+        </ul>
+
+        <!-- <label for="cart-toggle" class="cart-label"> 
+          
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
+        </label>
+        <input type="checkbox" id="cart-toggle" />  -->
+
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-bubble enable-bubble">0</div>
+          </i>
+          <!-- </i> -->
+        </div>
+
+        <!-- carrito de compras -->
+        <div class="cart">
+          <h2>Tus Productos</h2>
+
+          <!-- aca van los productos del carrito -->
+          <div class="cart-container"></div>
+
+          <span class="linea-total"></span>
+          <div class="cart-total">
+            <p>Total: $</p>
+            <p class="total-p">0</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn-cart buy">Comprar</button>
+            <button class="btn-cart delete">Vaciar</button>
+          </div>
+        </div>
+        <!-- fin carrito de compras -->
+        <a href="../login.html"><i class="fa-solid fa-user usr-icon"></i> </a>
+      </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <section id="hero">
+        <div class="hero-info">
+          <h1>Encontra tu camino hacia el <span>bienestar corporal</span></h1>
+          <p>
+            Elaboramos pan y derivados exclusivamente a partir de cereales
+            enteros orgánicos transformados en harina 100% integral. Con toda la
+            fibra, y los nutrientes que aportan el salvado y el gérmen de trigo
+            en proporciones natural y armónicamente balanceadas. Esto le aporta
+            un sinfín de beneficios a tu salud y al funcionamiento natural de tu
+            metabolismo demorando naturalmente y armoniosamente la incorporación
+            de los hidratos de carbono a tu cuerpo.
+          </p>
+          <a href="#abouts">Quienes Somos </a>
+        </div>
+        <div class="hero-img">
+          <!-- imagen -->
+          <img
+            src="./assets/img/hero.png"
+            alt="imagen panes"
+            class="img-hero"
+          />
+        </div>
+      </section>
+      <!-- abouts us -->
+      <section id="abouts">
+        <h2>Sobre nosotros</h2>
+        <div class="abouts-container">
+          <div class="abouts-card">
+            <p>
+              Somos un negocio moderno, de alta calidad y con mucho sabor que
+              llegó para irrumpir el mercado de la panadería tradicional
+            </p>
+          </div>
+          <div class="abouts-card">
+            <p>
+              Elaboramos todos nuestros productos con ingredientes naturales y
+              orgánicos, que también son 100% veganos, enfocados siempre en la
+              alimentación consciente como premisa
+            </p>
+          </div>
+          <div class="abouts-card">
+            <p>
+              La calidad es tan importante como el sabor, por eso nuestros
+              panificados, acompañamientos y facturas no tienen aditivos ni
+              conservantes
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- products -->
+      <section id="products">
+        <h2>Productos elaborados</h2>
+        <!-- categorias -->
+        <div class="categories">
+          <button class="category active">Todos</button>
+          <button class="category" data-category="salado">Salado</button>
+          <button class="category" data-category="dulce">Dulce</button>
+          <button class="category" data-category="integral">Integral</button>
+        </div>
+        <div class="product-container">
+          <!-- ---- -->
+        </div>
+      </section>
+      <!-- contacto -->
+      <section id="contact">
+        <div class="contact-info">
+          <h2>Contáctenos</h2>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Marcial Candioti 4110,Santa
+            Fe,Argentina
+          </p>
+          <p><i class="fa-solid fa-envelope"></i> info@mierisbackery.com.ar</p>
+          <p><i class="fa-solid fa-mobile"></i> (+54 342) 5234085</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.08948806903!2d-60.695362135299014!3d-31.63140011384909!2m3!1f0!2f0!3f0!
+          3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9eb45c0b8f5%3A0x31f57dd99326b103!2sMarcial%20Candioti%204110%2C%20S3002%20Santa%20Fe!5e0!3m2!1se
+          s!2sar!4v1667868312322!5m2!1ses!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      Hecho por IJP Sistemas | All rights reserved
+      <i class="fa-regular fa-circle-r"></i>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>

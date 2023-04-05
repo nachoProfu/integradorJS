@@ -1,0 +1,154 @@
+@media(max-width: 992px){
+
+
+  /* iba aca el menu hamburg */
+
+      /* hero */
+    
+    .hero-info{
+        text-align: center;
+        width: 90%;
+        align-items: center;
+        
+    }
+    
+    .hero-info h1{
+        display: block;
+        width: 100%;
+    }
+    .hero-info p{
+        max-width: 80%;
+        font-size: 16px;
+    }
+    
+    .hero-info a{
+        justify-content: center;
+    
+    }
+    .hero-img{
+        display: none;
+    }
+    
+    
+    /* abouts */
+    
+    .abouts-conteiner{
+        display: flex;
+        max-width: 70%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    
+    }
+    
+    }
+    
+    /* @media(max-width: 576px) */
+    @media(max-width: 665px){
+
+        /* menu hamburguesa */
+
+        .navbar-list{
+            background-color: var(--background);
+            border-bottom: 2px solid var(--secondary);
+            width: 90%;
+            height: cal(100vh - 80px);
+            position: absolute;
+            top:80px;
+            left: 5%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 45px 30px;
+            /* transform: translateX(200%);
+            transition: all 0.6s ease-in-out; */
+            z-index: 2;
+            display: none;
+        }
+
+            
+        .menu-hambur {
+            display: flex;
+            order: 2;
+            cursor: pointer;
+          }
+    
+        .open-menu {
+            display: flex;
+          }
+    
+
+
+        /* carrito */
+
+        .cart{
+            padding: 20px 9px;
+            gap:20px;
+            width: 300px;
+        } 
+        
+        .item-handler{
+            padding: 3px 3px;
+        }
+
+        .btn-compar{
+            padding: 5px 0px;
+           
+        }
+
+        .btn-cart{
+            min-width: 280px;
+        }
+
+        #hambur{
+            display: block ;
+            padding: 0px 20px;
+        }
+
+
+        /* #toggle-menu:checked ~ .navbar-list{
+            transform: translateX(0%);
+            transition:all 0.6s ease-in-out;
+        } */
+    
+    
+        .hero-info h1{
+            font-size: 30px;
+        }
+    
+        .hero-info p{
+            font-size: 14px;
+        }
+    
+        #abouts h2{
+            font-size: 26px;
+            
+        }
+    
+        .abouts-card p{
+            font-size: 14px;
+        }
+    
+        #products h2{
+            font-size: 26px;
+
+        }
+
+        .categories{
+            width: 80%;
+
+        }
+
+        .add-modal{
+            left:25%;
+            width: 300px;
+        }
+    
+        /* agregar resolucion mas pequeña para carrito aca */
+
+        
+    
+    }
+    

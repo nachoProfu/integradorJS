@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <!-- <link rel="stylesheet" href="./assets/styles.css" /> -->
+    <link rel="stylesheet" href="./assets/registro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="../index.html">
+          <img
+            src="./assets/img/logo_blanco_sf.png"
+            alt="logo mieris"
+            class="logo"
+          />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h1>Registrarse</h1>
+      <form class="formRegistro">
+        <!-- <h1>Registrarse</h1> -->
+        <div class="i-container">
+          <div class="input-line">
+            <input type="text" id="nombre" placeholder="Nombre y Apellido" />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <small></small>
+        </div>
+        <div class="i-container">
+          <div class="input-line">
+            <input type="text" id="direccion" placeholder="Direccion" />
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <small></small>
+        </div>
+
+        <div class="i-container">
+          <div class="input-line">
+            <input type="tel" id="tel" placeholder="Telefono" />
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <small></small>
+        </div>
+
+        <div class="i-container">
+          <div class="input-line">
+            <input type="email" id="email" placeholder="Email" />
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <small></small>
+        </div>
+
+        <div class="i-container">
+          <div class="input-line">
+            <input type="password" id="password" placeholder="Password" />
+            <i class="fa-solid fa-lock i-form"></i>
+          </div>
+          <small></small>
+        </div>
+
+        <input type="submit" class="btn-submit" value="Registrarse" />
+        <!-- <a href="../login.html"> Registrarse</a> -->
+      </form>
+    </main>
+    <footer>
+      <ul>
+        <li>Termino de Uso</li>
+        <li>Soporte</li>
+      </ul>
+      <p>| Realizado por IJP sistemas |</p>
+    </footer>
+    <script src="./assets/validationreg.js"></script>
+  </body>
+</html>
