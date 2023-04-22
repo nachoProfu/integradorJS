@@ -6,6 +6,7 @@
     --primary: #0A1128;
     --secondary: #001F54;
     --text-nav: #283044;
+    --text-hero: #fcfcfc;
 
 }
 
@@ -280,6 +281,13 @@ main{
     /* width: 90%; */
 }
 
+.hero-container-img{
+    display: flex;
+    background-image: url("./img/hero-fondo.png");
+    width: 95%;
+    border-radius: 20px;
+}
+
 .hero-info{
     display: flex;
     flex-direction: column;
@@ -290,9 +298,11 @@ main{
 .hero-info h1{
     font-size: 40px;
     font-weight: 800;
-    color: var(--text-nav);
+    /* color: var(--text-hero); */
+    color: white;
     display: flex;
     flex-direction: column;
+    padding: 20px 20px;
 }
 
 .hero-info h1 span{
@@ -302,15 +312,18 @@ main{
 .hero-info p{
     font-size: 15px;
     font-weight: 400;
-    color: var(--text-nav);
+    color: var(--text-hero);
+    padding: 30px 20px;
     width: 500px;
 }
 
 .hero-info a {
-    color: white;
-    background-color: var(--text-nav);
+    color: var(--text-nav);
+    background-color: white;
     width: 120px;
-    padding: 10px 0px;
+    padding: 10px 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     border-radius: 15px;
     font-size: 14px;
     font-weight:800;
